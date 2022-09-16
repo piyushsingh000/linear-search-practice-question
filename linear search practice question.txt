@@ -1,0 +1,32 @@
+// Searching an element in an array
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int Searching(int arr[] , int n , int key){
+    for(int i=0;i<n;i++){
+        if(arr[i]==key){
+            return i;
+        }
+    }
+    return -1 ;
+}
+
+
+int main () {
+    int n;
+    cout<<"enter Size of array: "<<endl;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        
+        cin>>arr[i];
+    }
+    int key;
+    cout<<"enter jo number chahiye: "<<endl;
+    cin>>key;
+    
+    cout<<Searching(arr, n , key)<<endl;
+    
+    
+}
